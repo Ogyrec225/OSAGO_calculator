@@ -1,12 +1,11 @@
 import traceback
 from dataclasses import asdict
 
+from domain.base_exceptions import ApplicationError, DomainError
 from fastapi import Request
 from fastapi.responses import JSONResponse
 from loguru import logger
-
-from osago.domain.base_exceptions import ApplicationError, DomainError
-from osago.presentation.api.responses.base import ErrorData, ErrorResponse
+from presentation.api.responses.base import ErrorData, ErrorResponse
 
 
 async def generic_exception_handler(

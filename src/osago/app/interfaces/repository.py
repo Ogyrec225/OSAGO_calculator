@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import Any, TypeVar
 
-from osago.app.dto import DTO
+from app.dto import DTO
 
 T = TypeVar("T", DTO, None)
 

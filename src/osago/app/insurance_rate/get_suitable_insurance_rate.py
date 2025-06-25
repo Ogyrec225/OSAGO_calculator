@@ -1,9 +1,8 @@
+from app.abc import QueryHandler
+from app.dto import InsuranceRateDTO
+from app.uow import UoWImpl
+from domain.exceptions import NotFoundError
 from pydantic import BaseModel
-
-from osago.app.abc import QueryHandler
-from osago.app.dto import InsuranceRateDTO
-from osago.app.uow import UoWImpl
-from osago.domain.exceptions import NotFoundError
 
 
 class GetSuitableInsuranceRatesQuery(BaseModel):

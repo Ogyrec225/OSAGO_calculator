@@ -1,4 +1,4 @@
-from osago.infra.static.types import OwnerType
+from infra.static.types import OwnerType
 
 from .base import DTO
 

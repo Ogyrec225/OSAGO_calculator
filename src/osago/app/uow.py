@@ -1,7 +1,5 @@
-from sqlalchemy.ext.asyncio import AsyncSession
-
-from osago.app.abc.uow import BaseUoW
-from osago.infra.database.repositories import (
+from app.abc.uow import BaseUoW
+from infra.database.repositories import (
     BonusMalusRepository,
     HorsepowerRepository,
     InsuranceRateRepository,
@@ -11,7 +9,8 @@ from osago.infra.database.repositories import (
     UsePeriodRepository,
     YearsPracticeRepository,
 )
-from osago.infra.database.uow import SQLAlchemyUoW
+from infra.database.uow import SQLAlchemyUoW
+from sqlalchemy.ext.asyncio import AsyncSession
 
 
 class UoWImpl(SQLAlchemyUoW, BaseUoW):

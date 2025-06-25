@@ -1,9 +1,8 @@
+from app.dto import PeriodUseDTO
+from app.interfaces.repository import CoefficientInterface
+from infra.database.models import PeriodUse
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
-from osago.app.dto import PeriodUseDTO
-from osago.app.interfaces.repository import CoefficientInterface
-from osago.infra.database.models import PeriodUse
 
 from .base import SQLAlchemyRepo
 

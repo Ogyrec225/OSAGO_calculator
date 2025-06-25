@@ -1,13 +1,10 @@
 from unittest.mock import AsyncMock
 
 import pytest
-from fastapi import status
-from httpx import AsyncClient
-
-from osago.app.calculate_osago import (
+from app.calculate_osago import (
     OsagoCalculatorImplV1,
 )
-from osago.app.dto import (
+from app.dto import (
     BonusMalusDTO,
     DataForOsagoV1DTO,
     HorsepowerDTO,
@@ -17,8 +14,10 @@ from osago.app.dto import (
     TerritorialCoefficientDTO,
     YearsPracticeDTO,
 )
-from osago.app.mediator_aggregator import MediatorAggregator
-from osago.infra.static.types import CarType, OSAGOType, OwnerType
+from app.mediator_aggregator import MediatorAggregator
+from fastapi import status
+from httpx import AsyncClient
+from infra.static.types import CarType, OSAGOType, OwnerType
 
 
 @pytest.mark.asyncio

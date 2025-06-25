@@ -1,4 +1,4 @@
-from osago.app.abc import BaseMediator
+from app.abc import BaseMediator
 
 
 class MediatorAggregator:

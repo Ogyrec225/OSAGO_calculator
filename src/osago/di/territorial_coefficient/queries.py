@@ -1,12 +1,11 @@
-from dependency_injector import containers, providers
-
-from osago.app.abc.handlers import QueryHandler
-from osago.app.territorial_coefficient import (
+from app.abc.handlers import QueryHandler
+from app.territorial_coefficient import (
     GetAllTerritorialCoefficientQuery,
     GetAllTerritorialCoefficientQueryHandler,
     GetSuitableTerritorialCoefficientQuery,
     GetSuitableTerritorialCoefficientQueryHandler,
 )
+from dependency_injector import containers, providers
 
 
 class TerritorialCoefficientsQueriesContainer(containers.DeclarativeContainer):

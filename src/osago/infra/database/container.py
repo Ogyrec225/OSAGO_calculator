@@ -1,11 +1,10 @@
 from dependency_injector import containers, providers
+from infra import settings
 from sqlalchemy.ext.asyncio import (
     async_sessionmaker,
     create_async_engine,
 )
 from sqlalchemy.pool import AsyncAdaptedQueuePool
-
-from osago.infra import settings
 
 
 class DataContainer(containers.DeclarativeContainer):

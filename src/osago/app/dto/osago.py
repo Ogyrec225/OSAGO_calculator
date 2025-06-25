@@ -1,8 +1,7 @@
 from decimal import Decimal
 
+from infra.static.types import CarType, OSAGOType, OwnerType
 from pydantic import Field
-
-from osago.infra.static.types import CarType, OSAGOType, OwnerType
 
 from .base import DTO
 

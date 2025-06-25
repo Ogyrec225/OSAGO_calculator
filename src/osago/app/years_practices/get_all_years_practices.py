@@ -1,8 +1,7 @@
+from app.abc import QueryHandler
+from app.dto import YearsPracticeDTO
+from app.uow import UoWImpl
 from pydantic import BaseModel
-
-from osago.app.abc import QueryHandler
-from osago.app.dto import YearsPracticeDTO
-from osago.app.uow import UoWImpl
 
 
 class GetAllYearsPracticesQuery(BaseModel):

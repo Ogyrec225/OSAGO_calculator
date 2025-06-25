@@ -1,12 +1,11 @@
-from dependency_injector import containers, providers
-
-from osago.app.abc.handlers import QueryHandler
-from osago.app.insurance_period import (
+from app.abc.handlers import QueryHandler
+from app.insurance_period import (
     GetAllPeriodInsurancesQuery,
     GetAllPeriodInsurancesQueryHandler,
     GetSuitablePeriodInsuranceQuery,
     GetSuitablePeriodInsuranceQueryHandler,
 )
+from dependency_injector import containers, providers
 
 
 class PeriodInsuranceQueriesContainer(containers.DeclarativeContainer):

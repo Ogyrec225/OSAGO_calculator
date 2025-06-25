@@ -1,12 +1,11 @@
-from dependency_injector import containers, providers
-
-from osago.app.abc.handlers import QueryHandler
-from osago.app.horsepower import (
+from app.abc.handlers import QueryHandler
+from app.horsepower import (
     GetAllHorsepowerQuery,
     GetAllHorsepowerQueryHandler,
     GetSuitableHorsepowerQuery,
     GetSuitableHorsepowerQueryHandler,
 )
+from dependency_injector import containers, providers
 
 
 class HorsepowerQueriesContainer(containers.DeclarativeContainer):

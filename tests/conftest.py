@@ -3,12 +3,11 @@ from unittest.mock import AsyncMock
 
 import pytest
 import pytest_asyncio
+from app.mediator_aggregator import MediatorAggregator
 from dependency_injector import containers, providers
 from httpx import ASGITransport, AsyncClient
-
-from osago.app.mediator_aggregator import MediatorAggregator
-from osago.infra import ModeType, settings
-from osago.presentation.api.main import app  # Замените на путь к вашему main.py
+from infra import ModeType, settings
+from presentation.api.main import app  # Замените на путь к вашему main.py
 
 
 @pytest_asyncio.fixture(scope="function")

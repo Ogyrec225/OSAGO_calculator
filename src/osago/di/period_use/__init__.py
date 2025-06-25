@@ -1,7 +1,6 @@
 from dependency_injector import containers, providers
-
-from osago.di.mediator import MediatorContainer
-from osago.di.period_use.queries import (
+from di.mediator import MediatorContainer
+from di.period_use.queries import (
     PeriodUseQueriesContainer,
 )
 

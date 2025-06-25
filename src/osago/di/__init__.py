@@ -1,16 +1,15 @@
+from app.mediator_aggregator import MediatorAggregator
 from dependency_injector import containers, providers
-
-from osago.app.mediator_aggregator import MediatorAggregator
-from osago.di.bonus_malus import BonusMalusContainer
-from osago.di.horsepower import HorsepowerContainer
-from osago.di.insurance_period import PeriodInsuranceContainer
-from osago.di.insurance_rate import InsuranceContainer
-from osago.di.period_use import PeriodUseContainer
-from osago.di.restriction_coefficient import RestrictionCoefficientContainer
-from osago.di.territorial_coefficient import TerritorialCoefficientContainer
-from osago.di.uow import UoWContainer
-from osago.di.years_practice import YearsPracticeContainer
-from osago.infra.database.container import DataContainer
+from di.bonus_malus import BonusMalusContainer
+from di.horsepower import HorsepowerContainer
+from di.insurance_period import PeriodInsuranceContainer
+from di.insurance_rate import InsuranceContainer
+from di.period_use import PeriodUseContainer
+from di.restriction_coefficient import RestrictionCoefficientContainer
+from di.territorial_coefficient import TerritorialCoefficientContainer
+from di.uow import UoWContainer
+from di.years_practice import YearsPracticeContainer
+from infra.database.container import DataContainer
 
 
 class ApplicationContainer(containers.DeclarativeContainer):

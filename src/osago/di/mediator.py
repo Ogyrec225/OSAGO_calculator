@@ -1,7 +1,6 @@
+from app.mediator import MediatorImpl
 from dependency_injector import containers, providers
-
-from osago.app.mediator import MediatorImpl
-from osago.di.utils import unification_handlers
+from di.utils import unification_handlers
 
 
 class MediatorContainer(containers.DeclarativeContainer):

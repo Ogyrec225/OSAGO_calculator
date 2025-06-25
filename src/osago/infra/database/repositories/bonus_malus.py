@@ -1,9 +1,8 @@
+from app.dto import BonusMalusDTO
+from app.interfaces.repository import CoefficientInterface
+from infra.database.models import BonusMalus
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
-from osago.app.dto import BonusMalusDTO
-from osago.app.interfaces.repository import CoefficientInterface
-from osago.infra.database.models import BonusMalus
 
 from .base import SQLAlchemyRepo
 

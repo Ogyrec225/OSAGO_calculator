@@ -1,9 +1,8 @@
+from app.dto import InsuranceRateDTO
+from app.interfaces.repository import CoefficientInterface
+from infra.database.models import InsuranceRate
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
-from osago.app.dto import InsuranceRateDTO
-from osago.app.interfaces.repository import CoefficientInterface
-from osago.infra.database.models import InsuranceRate
 
 from .base import SQLAlchemyRepo
 

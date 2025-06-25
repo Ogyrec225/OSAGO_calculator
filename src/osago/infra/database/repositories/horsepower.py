@@ -1,9 +1,8 @@
+from app.dto import HorsepowerDTO
+from app.interfaces.repository import CoefficientInterface
+from infra.database.models import Horsepower
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
-from osago.app.dto import HorsepowerDTO
-from osago.app.interfaces.repository import CoefficientInterface
-from osago.infra.database.models import Horsepower
 
 from .base import SQLAlchemyRepo
 

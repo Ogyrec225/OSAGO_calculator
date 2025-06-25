@@ -1,9 +1,8 @@
+from app.abc import QueryHandler
+from app.dto import RestrictionCoefficientDTO
+from app.uow import UoWImpl
+from infra.static.types import OwnerType
 from pydantic import BaseModel
-
-from osago.app.abc import QueryHandler
-from osago.app.dto import RestrictionCoefficientDTO
-from osago.app.uow import UoWImpl
-from osago.infra.static.types import OwnerType
 
 
 class GetSuitableRestrictionsQuery(BaseModel):

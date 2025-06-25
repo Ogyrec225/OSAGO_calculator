@@ -1,7 +1,6 @@
 from dependency_injector import containers, providers
-
-from osago.di.mediator import MediatorContainer
-from osago.di.territorial_coefficient.queries import (
+from di.mediator import MediatorContainer
+from di.territorial_coefficient.queries import (
     TerritorialCoefficientsQueriesContainer,
 )
 

@@ -1,8 +1,5 @@
-from dependency_injector.wiring import Provide, inject
-from fastapi import APIRouter, Depends
-
-from osago.app.bonus_malus import GetSuitableBonusMalusQuery
-from osago.app.dto import (
+from app.bonus_malus import GetSuitableBonusMalusQuery
+from app.dto import (
     BonusMalusDTO,
     HorsepowerDTO,
     InsuranceRateDTO,
@@ -12,17 +9,19 @@ from osago.app.dto import (
     TerritorialCoefficientDTO,
     YearsPracticeDTO,
 )
-from osago.app.horsepower import GetSuitableHorsepowerQuery
-from osago.app.insurance_period import GetSuitablePeriodInsuranceQuery
-from osago.app.insurance_rate import GetSuitableInsuranceRatesQuery
-from osago.app.mediator_aggregator import MediatorAggregator
-from osago.app.periods_use import GetSuitablePeriodsUseQuery
-from osago.app.restrictions import GetSuitableRestrictionsQuery
-from osago.app.territorial_coefficient import GetSuitableTerritorialCoefficientQuery
-from osago.app.years_practices import GetSuitableYearsPracticesQuery
-from osago.di import ApplicationContainer
-from osago.infra.static.types import OwnerType
-from osago.presentation.api.responses import OkResponse
+from app.horsepower import GetSuitableHorsepowerQuery
+from app.insurance_period import GetSuitablePeriodInsuranceQuery
+from app.insurance_rate import GetSuitableInsuranceRatesQuery
+from app.mediator_aggregator import MediatorAggregator
+from app.periods_use import GetSuitablePeriodsUseQuery
+from app.restrictions import GetSuitableRestrictionsQuery
+from app.territorial_coefficient import GetSuitableTerritorialCoefficientQuery
+from app.years_practices import GetSuitableYearsPracticesQuery
+from dependency_injector.wiring import Provide, inject
+from di import ApplicationContainer
+from fastapi import APIRouter, Depends
+from infra.static.types import OwnerType
+from presentation.api.responses import OkResponse
 
 coefficients_router = APIRouter(prefix="/coefficients", tags=["v1"])
 

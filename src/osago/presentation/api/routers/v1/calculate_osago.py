@@ -1,12 +1,11 @@
+from app.calculate_osago import OsagoCalculatorImplV1
+from app.dto import DataForOsagoV1DTO, OsagoWithCoefDTO
+from app.mediator_aggregator import MediatorAggregator
 from dependency_injector.wiring import Provide, inject
+from di import ApplicationContainer
 from fastapi import APIRouter, Depends
-
-from osago.app.calculate_osago import OsagoCalculatorImplV1
-from osago.app.dto import DataForOsagoV1DTO, OsagoWithCoefDTO
-from osago.app.mediator_aggregator import MediatorAggregator
-from osago.di import ApplicationContainer
-from osago.presentation.api.responses import OkResponse
-from osago.presentation.api.routers.v1.serialization import OsagoInAPISchema
+from presentation.api.responses import OkResponse
+from presentation.api.routers.v1.serialization import OsagoInAPISchema
 
 router = APIRouter(prefix="/osago", tags=["v1"])
 

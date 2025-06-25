@@ -1,12 +1,11 @@
-from dependency_injector import containers, providers
-
-from osago.app.abc.handlers import QueryHandler
-from osago.app.bonus_malus import (
+from app.abc.handlers import QueryHandler
+from app.bonus_malus import (
     GetAllBonusMalusQuery,
     GetAllBonusMalusQueryHandler,
     GetSuitableBonusMalusQuery,
     GetSuitableBonusMalusQueryHandler,
 )
+from dependency_injector import containers, providers
 
 
 class BonusMalusQueriesContainer(containers.DeclarativeContainer):

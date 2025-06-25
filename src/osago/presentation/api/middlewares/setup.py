@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
-from osago.infra import settings
+from infra import settings
 
 
 def setup_core_middleware(app: FastAPI):

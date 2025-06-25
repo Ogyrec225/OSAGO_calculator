@@ -1,9 +1,8 @@
+from di import ApplicationContainer
+from domain.base_exceptions import ApplicationError, DomainError
 from fastapi import FastAPI
-
-from osago.di import ApplicationContainer
-from osago.domain.base_exceptions import ApplicationError, DomainError
-from osago.presentation.api.exception_handlers import generic_exception_handler
-from osago.presentation.api.routers import v1, v2
+from presentation.api.exception_handlers import generic_exception_handler
+from presentation.api.routers import v1, v2
 
 
 def configure(api: FastAPI):

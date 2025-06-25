@@ -1,8 +1,5 @@
-from dependency_injector.wiring import Provide, inject
-from fastapi import APIRouter, Depends
-
-from osago.app.bonus_malus import GetAllBonusMalusQuery
-from osago.app.dto import (
+from app.bonus_malus import GetAllBonusMalusQuery
+from app.dto import (
     BonusMalusDTO,
     HorsepowerDTO,
     InsuranceRateDTO,
@@ -12,16 +9,18 @@ from osago.app.dto import (
     TerritorialCoefficientDTO,
     YearsPracticeDTO,
 )
-from osago.app.horsepower import GetAllHorsepowerQuery
-from osago.app.insurance_period import GetAllPeriodInsurancesQuery
-from osago.app.insurance_rate import GetAllInsuranceRatesQuery
-from osago.app.mediator_aggregator import MediatorAggregator
-from osago.app.periods_use import GetAllPeriodsUseQuery
-from osago.app.restrictions import GetAllRestrictionsQuery
-from osago.app.territorial_coefficient import GetAllTerritorialCoefficientQuery
-from osago.app.years_practices import GetAllYearsPracticesQuery
-from osago.di import ApplicationContainer
-from osago.presentation.api.responses import OkResponse
+from app.horsepower import GetAllHorsepowerQuery
+from app.insurance_period import GetAllPeriodInsurancesQuery
+from app.insurance_rate import GetAllInsuranceRatesQuery
+from app.mediator_aggregator import MediatorAggregator
+from app.periods_use import GetAllPeriodsUseQuery
+from app.restrictions import GetAllRestrictionsQuery
+from app.territorial_coefficient import GetAllTerritorialCoefficientQuery
+from app.years_practices import GetAllYearsPracticesQuery
+from dependency_injector.wiring import Provide, inject
+from di import ApplicationContainer
+from fastapi import APIRouter, Depends
+from presentation.api.responses import OkResponse
 
 coefficients_router = APIRouter(prefix="/coeficients", tags=["v2"])
 

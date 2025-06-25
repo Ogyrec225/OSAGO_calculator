@@ -1,9 +1,8 @@
 from dependency_injector import containers, providers
-
-from osago.di.bonus_malus.queries import (
+from di.bonus_malus.queries import (
     BonusMalusQueriesContainer,
 )
-from osago.di.mediator import MediatorContainer
+from di.mediator import MediatorContainer
 
 
 class BonusMalusContainer(containers.DeclarativeContainer):

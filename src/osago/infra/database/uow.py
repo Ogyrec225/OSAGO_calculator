@@ -1,8 +1,7 @@
 from uuid import UUID
 
+from app.abc.uow import BaseUoW, HasID
 from sqlalchemy.ext.asyncio import AsyncSession
-
-from osago.app.abc.uow import BaseUoW, HasID
 
 
 class SQLAlchemyUoW(BaseUoW):

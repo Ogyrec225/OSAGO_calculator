@@ -1,6 +1,5 @@
 from dependency_injector import containers, providers
-
-from osago.infra.database.repositories import (
+from infra.database.repositories import (
     BonusMalusRepository,
     HorsepowerRepository,
     InsuranceRateRepository,

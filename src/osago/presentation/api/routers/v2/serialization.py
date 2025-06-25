@@ -1,6 +1,5 @@
+from infra.static.types import CarType, OSAGOType, OwnerType
 from pydantic import BaseModel, Field
-
-from osago.infra.static.types import CarType, OSAGOType, OwnerType
 
 
 class OsagoInAPISchema(BaseModel):

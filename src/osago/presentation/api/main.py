@@ -1,8 +1,7 @@
 from fastapi import FastAPI
-
-from osago.infra import settings
-from osago.presentation.api.middlewares.setup import setup_core_middleware
-from osago.presentation.api.routers.configure import configure, global_lifespan
+from infra import settings
+from presentation.api.middlewares.setup import setup_core_middleware
+from presentation.api.routers.configure import configure, global_lifespan
 
 
 def start() -> FastAPI:

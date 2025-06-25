@@ -1,12 +1,11 @@
-from dependency_injector import containers, providers
-
-from osago.app.abc.handlers import QueryHandler
-from osago.app.years_practices import (
+from app.abc.handlers import QueryHandler
+from app.years_practices import (
     GetAllYearsPracticesQuery,
     GetAllYearsPracticesQueryHandler,
     GetSuitableYearsPracticesQuery,
     GetSuitableYearsPracticesQueryHandler,
 )
+from dependency_injector import containers, providers
 
 
 class PracticeQueriesContainer(containers.DeclarativeContainer):

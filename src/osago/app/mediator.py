@@ -1,8 +1,8 @@
 from contextlib import AbstractAsyncContextManager
 
-from osago.app.abc import BaseMediator
-from osago.app.abc.handlers import CommandHandler, QueryHandler
-from osago.app.abc.uow import BaseUoW
+from app.abc import BaseMediator
+from app.abc.handlers import CommandHandler, QueryHandler
+from app.abc.uow import BaseUoW
 
 
 class MediatorImpl(BaseMediator):

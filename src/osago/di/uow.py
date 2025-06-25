@@ -1,7 +1,6 @@
+from app.uow import UoWImpl
 from dependency_injector import containers, providers
-
-from osago.app.uow import UoWImpl
-from osago.di.repositories import (
+from di.repositories import (
     BonusMalusRepositoryContainer,
     HorsepowerRepositoryContainer,
     InsuranceRateRepositoryContainer,

@@ -1,9 +1,8 @@
 from dependency_injector import containers, providers
-
-from osago.di.horsepower.queries import (
+from di.horsepower.queries import (
     HorsepowerQueriesContainer,
 )
-from osago.di.mediator import MediatorContainer
+from di.mediator import MediatorContainer
 
 
 class HorsepowerContainer(containers.DeclarativeContainer):

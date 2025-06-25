@@ -1,7 +1,6 @@
 from dependency_injector import containers, providers
-
-from osago.di.mediator import MediatorContainer
-from osago.di.years_practice.queries import (
+from di.mediator import MediatorContainer
+from di.years_practice.queries import (
     PracticeQueriesContainer,
 )
 

@@ -1,12 +1,11 @@
-from dependency_injector import containers, providers
-
-from osago.app.abc.handlers import QueryHandler
-from osago.app.restrictions import (
+from app.abc.handlers import QueryHandler
+from app.restrictions import (
     GetAllRestrictionsQuery,
     GetAllRestrictionsQueryHandler,
     GetSuitableRestrictionsQuery,
     GetSuitableRestrictionsQueryHandler,
 )
+from dependency_injector import containers, providers
 
 
 class RestrictionQueryContainer(containers.DeclarativeContainer):

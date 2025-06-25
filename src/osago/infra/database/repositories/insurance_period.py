@@ -1,9 +1,8 @@
+from app.dto import PeriodInsuranceDTO
+from app.interfaces.repository import CoefficientInterface
+from infra.database.models import PeriodInsurance
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
-from osago.app.dto import PeriodInsuranceDTO
-from osago.app.interfaces.repository import CoefficientInterface
-from osago.infra.database.models import PeriodInsurance
 
 from .base import SQLAlchemyRepo
 

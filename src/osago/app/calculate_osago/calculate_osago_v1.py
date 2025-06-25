@@ -1,22 +1,22 @@
 from decimal import Decimal
 
-from osago.app.bonus_malus import GetSuitableBonusMalusQuery
-from osago.app.dto import (
+from app.bonus_malus import GetSuitableBonusMalusQuery
+from app.dto import (
     DataForOsagoV1DTO,
     InsuranceRateDTO,
     OsagoWithCoefDTO,
     TerritorialCoefficientDTO,
 )
-from osago.app.horsepower import GetSuitableHorsepowerQuery
-from osago.app.insurance_period import GetSuitablePeriodInsuranceQuery
-from osago.app.insurance_rate import GetSuitableInsuranceRatesQuery
-from osago.app.interfaces.service import OsagoCalculator
-from osago.app.mediator_aggregator import MediatorAggregator
-from osago.app.periods_use import GetSuitablePeriodsUseQuery
-from osago.app.restrictions import GetSuitableRestrictionsQuery
-from osago.app.territorial_coefficient import GetSuitableTerritorialCoefficientQuery
-from osago.app.years_practices import GetSuitableYearsPracticesQuery
-from osago.infra.static.types import CarType, OSAGOType, OwnerType
+from app.horsepower import GetSuitableHorsepowerQuery
+from app.insurance_period import GetSuitablePeriodInsuranceQuery
+from app.insurance_rate import GetSuitableInsuranceRatesQuery
+from app.interfaces.service import OsagoCalculator
+from app.mediator_aggregator import MediatorAggregator
+from app.periods_use import GetSuitablePeriodsUseQuery
+from app.restrictions import GetSuitableRestrictionsQuery
+from app.territorial_coefficient import GetSuitableTerritorialCoefficientQuery
+from app.years_practices import GetSuitableYearsPracticesQuery
+from infra.static.types import CarType, OSAGOType, OwnerType
 
 
 class OsagoCalculatorImplV1(OsagoCalculator):

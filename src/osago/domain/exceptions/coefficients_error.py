@@ -1,4 +1,4 @@
-from osago.domain.base_exceptions import ApplicationError, DomainError
+from domain.base_exceptions import ApplicationError, DomainError
 
 
 class NotFoundError(ApplicationError):

@@ -1,8 +1,7 @@
+from app.abc import QueryHandler
+from app.dto import PeriodInsuranceDTO
+from app.uow import UoWImpl
 from pydantic import BaseModel
-
-from osago.app.abc import QueryHandler
-from osago.app.dto import PeriodInsuranceDTO
-from osago.app.uow import UoWImpl
 
 
 class GetSuitablePeriodInsuranceQuery(BaseModel):

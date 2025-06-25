@@ -1,9 +1,8 @@
+from app.dto import YearsPracticeDTO
+from app.interfaces.repository import CoefficientInterface
+from infra.database.models import YearsPractice
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
-from osago.app.dto import YearsPracticeDTO
-from osago.app.interfaces.repository import CoefficientInterface
-from osago.infra.database.models import YearsPractice
 
 from .base import SQLAlchemyRepo
 

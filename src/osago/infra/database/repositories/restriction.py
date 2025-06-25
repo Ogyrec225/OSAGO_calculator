@@ -1,10 +1,9 @@
+from app.dto import RestrictionCoefficientDTO
+from app.interfaces.repository import CoefficientInterface
+from infra.database.models import RestrictionCoefficient
+from infra.static.types import OwnerType
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
-from osago.app.dto import RestrictionCoefficientDTO
-from osago.app.interfaces.repository import CoefficientInterface
-from osago.infra.database.models import RestrictionCoefficient
-from osago.infra.static.types import OwnerType
 
 from .base import SQLAlchemyRepo
 
