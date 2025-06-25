@@ -8,8 +8,9 @@ services:
         networks:
           - app-network
         env_file:
-            - .env
-
+          - .env
+        ports:
+          - "5100:5100"
     server: #network: bridge
         container_name: server
         build:
