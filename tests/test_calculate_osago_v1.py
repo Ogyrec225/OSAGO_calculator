@@ -249,7 +249,7 @@ class TestCalculateOsago:
             ),
         ],
     )
-    async def test_calculate_osago_no_insurance_rate(
+    async def test_calculate_osago_unit(
         self,
         data,
         bonus_malus,
