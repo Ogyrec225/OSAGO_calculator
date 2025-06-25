@@ -13,9 +13,9 @@ from osago.app.dto import (
     YearsPracticeDTO,
 )
 from osago.app.horsepower import GetSuitableHorsepowerQuery
+from osago.app.insurance_period import GetSuitablePeriodInsuranceQuery
 from osago.app.insurance_rate import GetSuitableInsuranceRatesQuery
 from osago.app.mediator_aggregator import MediatorAggregator
-from osago.app.insurance_period import GetSuitablePeriodInsuranceQuery
 from osago.app.periods_use import GetSuitablePeriodsUseQuery
 from osago.app.restrictions import GetSuitableRestrictionsQuery
 from osago.app.territorial_coefficient import GetSuitableTerritorialCoefficientQuery

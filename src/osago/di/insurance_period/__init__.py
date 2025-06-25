@@ -1,9 +1,9 @@
 from dependency_injector import containers, providers
 
-from osago.di.mediator import MediatorContainer
 from osago.di.insurance_period.queries import (
     PeriodInsuranceQueriesContainer,
 )
+from osago.di.mediator import MediatorContainer
 
 
 class PeriodInsuranceContainer(containers.DeclarativeContainer):

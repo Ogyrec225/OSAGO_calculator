@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Mapped, mapped_column
 
-from osago.infra.database.models.base import Base, BaseInt
+from osago.infra.database.models.base import BaseInt
 from osago.infra.static.types import OwnerType
 
 

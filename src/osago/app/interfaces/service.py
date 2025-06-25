@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
 
-from osago.app.abc.uow import BaseUoW
-
 
 class OsagoCalculator(ABC):
     @staticmethod

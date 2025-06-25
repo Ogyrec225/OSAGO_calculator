@@ -264,8 +264,7 @@ class TestCalculateOsago:
         max_price,
         min_price,
     ):
-        """Unit тест ОСАГО"""
-
+        """Unit тест ОСАГО."""
         mock_mediator = AsyncMock(spec=MediatorAggregator)
 
         async def get_coefficient(query, context):
