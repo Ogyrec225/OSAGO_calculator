@@ -4,11 +4,9 @@ services:
         build:
           dockerfile: ./deploy/osago.Dockerfile
         volumes:
-          - files-dir:/tmp
           - ./src/osago:/app
         networks:
           - app-network
-          - postgres-network
         env_file:
             - .env
 
@@ -25,10 +23,7 @@ services:
         ports:
           - "80:80"
 
-volumes:
-  files-dir:
-    external: true
+
 
 networks:
   app-network:
-  postgres-network:
